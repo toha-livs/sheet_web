@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="http://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+    {%load staticfiles%}
+    <link rel="stylesheet" href="{% static 'css/info.css' %}"/>
+    <title>info</title>
+</head>
+<body>
+<div class="col-xs-12" style="padding: 0;">
+    <div style="padding: 0;" class="col-xs-1 boton">
+        <button type="button" onclick="history.back()">
+            <span class="glyphicon glyphicon-arrow-left"></span><br>
+            назад
+        </button>
+    </div>
+    <div class="col-xs-8 col-xs-offset-1" id="cube">
+            <div style="margin: 30px;">
+                <div id="1" class="zm_nation text-center">
+                    <div class="info_1 col-xs-3 text-left">имя</div>
+                    <div class="info_2 col-xs-9 "><big>{{имя}}</big></div><br>
+                </div>
+                <div id="2" class="zm_nation text-center">
+                    <div class="info_1 col-xs-3 text-left">фамилия</div>
+                    <div class="info_2 col-xs-9 "><big>{{фамилия}}</big></div><br>
+                </div>
+                <div id="3" class="zm_nation text-center">
+                        <div class="info_1 col-xs-3 text-left">отчество</div>
+                        <div class="info_2 col-xs-9 "><big>{{отчество}}</big></div><br>
+                </div>
+                <div id="4" class="zm_nation text-center">
+                        <div class="info_1 col-xs-3 text-left">год рождения</div>
+                        <div class="info_2 col-xs-9 "><big>{{год_рождения}}</big></div><br>
+                </div>
+                <div id="5" class="zm_nation text-center">
+                        <div class="info_1 col-xs-3 text-left">статус</div>
+                        <div class="info_2 col-xs-9 "><big>{{статус}}</big></div><br>
+                </div>
+                <div id="6" class="zm_nation text-center">
+                        <div class="info_1 col-xs-3 text-left">дата регистрации</div>
+                        <div class="info_2 col-xs-9 "><big>{{дата_регистрации}}</big></div><br>
+                </div>
+                <div id="7" class="zm_nation text-center">
+                        <div class="info_1 col-xs-3 text-left">город</div>
+                        <div class="info_2 col-xs-9 "><big>{{город}}</big></div><br>
+                </div>
+            </div>
+    </div>
+    <div id="content">Контент</div>
+    <div id="top" class="col-xs-1 col-xs-offset-1 goup">
+        <div  class="text-center">
+            <span class="glyphicon glyphicon-arrow-up"></span>
+            <br>наверх
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+  var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+  var delay = 1000; // Задержка прокрутки
+  $(document).ready(function() {
+    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+      /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+      if ($(this).scrollTop() > top_show) $('#top').fadeIn();
+      else $('#top').fadeOut();
+    });
+    $('#top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+      /* Плавная прокрутка наверх */
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
+  });
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+</body>
+</html>

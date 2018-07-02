@@ -1,0 +1,64 @@
+body {
+    background-color: #313435;
+}
+#cube {
+    background-color: #535760;
+    margin-top: 50px;
+    border-radius: 5px;
+
+    height: 320px;
+    overflow-y: scroll;
+}
+#content {
+	text-indent:20px;
+	text-align:justify;
+}
+#pagingControls {
+	padding-top:15px;
+	font-weight:bold;
+}
+#pagingControls ul {
+	display:inline;
+	padding-left:0.5em;
+}
+#pagingControls li {
+	display:inline;
+	padding:0 0.5em
+}
+#btn-bk {
+    margin-bottom: 30px;
+    margin-left: 20%;
+    height: 50px;
+    font-size: 27px;
+}
+#btn-ft {
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 20%;
+    height:50px;
+    font-size: 27px;
+}
+.z {
+    color: #c5c5c5;
+    font-size: 25px;
+
+}
+.sel_pic {
+    margin-top: 80px;
+    height: 40px;
+    text-align: inherit;
+}
+.dropdown-toggle {
+    text-align: inherit;
+    height: 46px;
+    font-size: 18px;
+}
+.abc {
+    border-bottom: 4px groove #000;
+}
+a:hover {
+    color: #fff;
+}
+button, select {
+    text-transform: uppercase;
+}

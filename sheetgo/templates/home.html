@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="http://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+    {%load staticfiles%}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}"/>
+    <title>home</title>
+</head>
+<body>
+<div class="col-xs-12">
+    <form action="" method="POST">
+      {% csrf_token %}
+        <div class="col-xs-3 col-xs-offset-2">
+            <select class="selectpicker sel_pic show-tick" name="город" data-style="btn-danger">
+                <option value="all">Все города</option>
+                <option value="zt">Житомир</option>
+                <option value="chr">Чернигов</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            <select class="selectpicker sel_pic show-tick" name="статус" data-style="btn-warning">
+                <option value="all">любой статус</option>
+                <option value="pass">прошел</option>
+                <option value="block">не прошел</option>
+            </select>
+        </div>
+        <div class="col-xs-2 sel_pic">
+            <button class="btn btn-success btn-lg" type="submit">
+               отфильтровать
+            </button>
+        </div>
+    </form>
+    <div class="col-xs-8 col-xs-offset-2" id="cube">
+        {% for post in posts%}
+            <div style="margin: 30px; border-bottom: 4px groove #a7a5a582;">
+                    <a id="{{post.id}}" class="z text-left" href="/home/{{post.id}}">
+                        <div class="col-xs-3 text-left">{{post.дата_регистрации}}</div>
+                        <div class="col-xs-9 "> {{post.фамилия}} {{post.имя}} {{post.отчество}}</div>
+                    </a><br>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<script>
+(function($){
+$(window).load(function(){
+
+$("body").mCustomScrollbar({
+theme:"dark-thin"
+});
+
+});
+})(jQuery);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+</body>
+</html>
+
+
+

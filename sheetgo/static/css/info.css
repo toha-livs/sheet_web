@@ -1,0 +1,65 @@
+body {
+    background-color: #313435;
+}
+#cube {
+    background-color: #535760;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    color: #ccc;
+}
+.zm_nation {
+    height: 100px;
+    border-top: 4px solid #696969a6;
+}
+.info_1 {
+    font-size: 25px;
+}
+.info_2 {
+    font-size: 30px;
+    color: #fff8f8;
+}
+.boton {
+    margin-top: 200px;
+}
+.boton button {
+    position: fixed;
+    height: 200px;
+    width: 10%;
+    background-color: #1688a2;
+    color: #313435;
+    border-radius: 0 10px 10px 0;
+    border: 0;
+    font-size: x-large;
+}
+.goup {
+    margin-top: 200px;
+}
+.goup a {
+
+    position: fixed;
+    height: 200px;
+    width: 10%;
+    background-color: #1688a2;
+    color: #313435;
+    border-radius:10px 0 0 10px;
+    border: 0;
+    font-size: x-large;
+}
+#content {
+  background-color: #313435;
+  height: 3000px;
+}
+#top {
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+  font-size: 150%;
+  position: fixed;
+  right: 0;
+  height: 3000px;
+  color: #1688a2;
+  background-color: #1688a2;
+  color: #313435;
+  border-radius:10px 0 0 10px;
+}
