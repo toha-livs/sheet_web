@@ -9,14 +9,14 @@ body {
     color: #ccc;
 }
 .zm_nation {
-    height: 100px;
+    height: 80px;
     border-top: 4px solid #696969a6;
 }
 .info_1 {
-    font-size: 25px;
+    font-size: 13px;
 }
 .info_2 {
-    font-size: 30px;
+    font-size: 18px;
     color: #fff8f8;
 }
 .boton {
@@ -62,4 +62,9 @@ body {
   background-color: #1688a2;
   color: #313435;
   border-radius:10px 0 0 10px;
+}
+.educ {
+    height: auto;
+    min-height: 80px;
+    max-height: 150px;
 }

@@ -24,8 +24,11 @@
         <div class="col-xs-3">
             <select class="selectpicker sel_pic show-tick" name="статус" data-style="btn-warning">
                 <option value="all">любой статус</option>
-                <option value="pass">прошел</option>
-                <option value="block">не прошел</option>
+                <option value="schedule">Запланирован на СБ</option>
+                <option value="directed">Направлен СБ</option>
+                <option value="pass">Одобрен СБ</option>
+                <option value="reject">Отклонен СБ</option>
+                <option value="reinviw">Дополнительная проверка СБ</option>
             </select>
         </div>
         <div class="col-xs-2 sel_pic">
@@ -38,8 +41,9 @@
         {% for post in posts%}
             <div style="margin: 30px; border-bottom: 4px groove #a7a5a582;">
                     <a id="{{post.id}}" class="z text-left" href="/home/{{post.id}}">
-                        <div class="col-xs-3 text-left">{{post.дата_регистрации}}</div>
-                        <div class="col-xs-9 "> {{post.фамилия}} {{post.имя}} {{post.отчество}}</div>
+                        <div class="col-xs-3 text-left">{{post.time}}</div>
+                        <div class="col-xs-6 "> {{post.name}} </div>
+                        <div class="col-xs-3" style="text-align: right;"><small>{{post.status}}</small></div>
                     </a><br>
             </div>
         {% endfor %}

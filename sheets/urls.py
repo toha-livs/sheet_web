@@ -19,15 +19,28 @@ from sheetgo import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('home/all/all', views.all_all, name='all_all'),
+    path('home/all/schedule', views.all_schedule, name='all_schedule'),
+    path('home/all/directed', views.all_directed, name='all_directed'),
     path('home/all/pass', views.all_pass, name='all_pass'),
-    path('home/all/block', views.all_block, name='all_block'),
+    path('home/all/reject', views.all_reject, name='all_reject'),
+    path('home/all/reinviw', views.all_reinviw, name='all_reinviw'),
+
     path('home/zt/all', views.zt_all, name='zt_all'),
+    path('home/zt/schedule', views.zt_schedule, name='zt_schedule'),
+    path('home/zt/directed', views.zt_directed, name='zt_directed'),
     path('home/zt/pass', views.zt_pass, name='zt_pass'),
-    path('home/zt/block', views.zt_block, name='zt_block'),
+    path('home/zt/reject', views.zt_reject, name='zt_reject'),
+    path('home/zt/reinviw', views.zt_reinviw, name='zt_reinviw'),
+
     path('home/chr/all', views.chr_all, name='chr_all'),
+    path('home/chr/schedule', views.chr_schedule, name='chr_schedule'),
+    path('home/chr/directed', views.chr_directed, name='chr_directed'),
     path('home/chr/pass', views.chr_pass, name='chr_pass'),
-    path('home/chr/block', views.chr_block, name='chr_block'),
+    path('home/chr/reject', views.chr_reject, name='chr_reject'),
+    path('home/chr/reinviw', views.chr_reinviw, name='chr_reinviw'),
+
     path('home/<int:go>', views.user_info, name='user_info')
 
 ]

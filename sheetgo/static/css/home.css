@@ -6,7 +6,7 @@ body {
     margin-top: 50px;
     border-radius: 5px;
 
-    height: 320px;
+    height: 420px;
     overflow-y: scroll;
 }
 #content {
@@ -40,7 +40,7 @@ body {
 }
 .z {
     color: #c5c5c5;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 .sel_pic {
