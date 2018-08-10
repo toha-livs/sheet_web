@@ -41,6 +41,8 @@ urlpatterns = [
     path('home/chr/reject', views.chr_reject, name='chr_reject'),
     path('home/chr/reinviw', views.chr_reinviw, name='chr_reinviw'),
 
-    path('home/<int:go>', views.user_info, name='user_info')
+    path('home/<int:go>/<int:repage>', views.user_info, name='user_info'),
+    path('', views.log_in, name='log_in'),
+    path('logout/', views.logout_to, name='logout')
 
 ]

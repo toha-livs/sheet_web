@@ -44,8 +44,8 @@ body {
 
 }
 .sel_pic {
-    margin-top: 80px;
-    height: 40px;
+    margin-top: 10px;
+    height: 25px;
     text-align: inherit;
 }
 .dropdown-toggle {
@@ -61,4 +61,9 @@ a:hover {
 }
 button, select {
     text-transform: uppercase;
+}
+#logout {
+    background-color: #fdfdfd;
+    border-radius: 0 0 5px 0;
+    color: #717171;
 }

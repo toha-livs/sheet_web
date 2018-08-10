@@ -13,175 +13,188 @@
 <body>
 <div class="col-xs-12" style="padding: 0;">
     <div style="padding: 0;" class="col-xs-1 boton">
-        <button type="button" onclick="history.back()">
+        <button type="button" onclick="history.go({{repage}})">
             <span class="glyphicon glyphicon-arrow-left"></span><br>
             назад
         </button>
     </div>
     <div class="col-xs-8 col-xs-offset-1" id="cube">
             <div style="margin: 30px;">
-                <div id="1" class="zm_nation text-center">
-                    <div class="info_1 col-xs-3 text-left">Отметка времени</div>
-                    <div class="info_2 col-xs-9 "><big>{{info.1}}</big></div><br>
-                </div>
-                <div id="2" class="zm_nation text-center">
-                    <div class="info_1 col-xs-3 text-left">Фамилия</div>
-                    <div class="info_2 col-xs-9 "><big>{{info.2}}</big></div><br>
-                </div>
-                <div id="3" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Имя</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.3}}</big></div><br>
-                </div>
-                <div id="4" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Отчество</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.4}}</big></div><br>
-                </div>
-                <div id="5" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Фамилия, Имя, Отчество на украинском</div>
-                        <div class="info_2 col-xs-9 " onclick="change_form()">
-                             <big>{{info.5}}</big>
-                        </div><br>
-                </div>
-                <div id="6" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Дата рождения</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.6}}</big></div><br>
-                </div>
-                <div id="7" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Серия, номер паспорта</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.7}}</big></div><br>
-                </div>
-                <div id="8" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">ИНН</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.8}}</big></div><br>
-                </div>
-                <div id="9" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Адрес прописки</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.9}}</big></div><br>
-                </div>
-                <div id="10" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Адрес проживания</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.10}}</big></div><br>
-                </div>
-                <div id="11" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Контакты</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.11}}</big></div><br>
-                </div>
-                <div id="12" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">E-mail</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.12}}</big></div><br>
-                </div>
-                <div id="13" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Есть ли у вас кредитные обязательства?</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.13}}</big></div><br>
-                </div>
-                <div id="14" class="zm_nation text-center educ">
-                        <div class="info_1 col-xs-3 text-left">Образование</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.14}}</big></div><br>
-                </div>
-                <div id="15" class="zm_nation text-center educ">
-                        <div class="info_1 col-xs-3 text-left">Где учились?</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.15}}</big></div><br>
-                </div>
-                <div id="16" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Дополнительное образование</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.16}}</big></div><br>
-                </div>
-                <div id="17" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Есть ли у Вас опыт работы?</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.17}}</big></div><br>
-                </div>
-                <div id="18" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Название компании</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.18}}</big></div><br>
-                </div>
-                <div id="19" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Должность и период работы</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.19}}</big></div><br>
-                </div>
-                <div id="20" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Причина увольнения</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.20}}</big></div><br>
-                </div>
-                <div id="21" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Название компании</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.21}}</big></div><br>
-                </div>
-                <div id="22" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Должность и период работы</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.22}}</big></div><br>
-                </div>
-                <div id="23" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Причина увольнения</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.23}}</big></div><br>
-                </div>
-                <div id="24" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Название компании</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.24}}</big></div><br>
-                </div>
-                <div id="25" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Должность и период работы</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.25}}</big></div><br>
-                </div>
-                <div id="26" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Причина увольнения</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.26}}</big></div><br>
-                </div>
-                <div id="27" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Мать (ФИО, дата рождения, место работы)</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.27}}</big></div><br>
-                </div>
-                <div id="28" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Отец (ФИО, дата рождения, место работы)</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.28}}</big></div><br>
-                </div>
-                <div id="29" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Брат (ФИО, дата рождения, место работы)</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.29}}</big></div><br>
-                </div>
-                <div id="30" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Сестра (ФИО, дата рождения, место работы)</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.30}}</big></div><br>
-                </div>
-                <div id="31" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Муж/Жена (ФИО, дата рождения, место работы)</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.31}}</big></div><br>
-                </div>
-                <div id="32" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Дети (ФИО, дата рождения, место работы)</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.32}}</big></div><br>
-                </div>
-                <div id="33" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Ваше хобби</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.33}}</big></div><br>
-                </div>
-                <div id="34" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Откуда узнали о Lamoda</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.34}}</big></div><br>
-                </div>
-                <div id="35" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Будет ли вам удобно пройти обучение с 9:00 до 18:00?</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.35}}</big></div><br>
-                </div>
-                <div id="36" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Когда готовы приступить к обучению?</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.36}}</big></div><br>
-                </div>
-                <div id="37" class="zm_nation text-center">
-                        <div class="info_1 col-xs-4 text-left">Есть ли у вас медицинские противопоказания к выполнению обязанностей?</div>
-                        <div class="info_2 col-xs-8 "><big>{{info.37}}</big></div><br>
-                </div>
-                <div id="38" class="zm_nation text-center">
-                        <div class="info_1 col-xs-5 text-left">Я даю согласие на хранение и обработку моих персональных данных с целью ведения кадрового делопроизводства.</div>
-                        <div class="info_2 col-xs-7 "><big>{{info.38}}</big></div><br>
-                </div>
-                <div id="39" class="zm_nation text-center">
-                        <div class="info_1 col-xs-4 text-left">Город</div>
-                        <div class="info_2 col-xs-8 "><big>{{info.39}}</big></div><br>
-                </div>
-                <div id="40" class="zm_nation text-center">
-                        <div class="info_1 col-xs-3 text-left">Статус</div>
-                        <div class="info_2 col-xs-9 "><big>{{info.40}}</big></div><br>
-                </div>
+                <form action="" method="POST">
+                {% csrf_token %}
+                    <div id="1" class="zm_nation text-center">
+                        <div class="info_1 col-xs-3 text-left">Отметка времени</div>
+                        <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='A';this.parentNode.replaceChild(inp,this)"><big>{{info.1}}</big></div><br>
+                    </div>
+                    <div id="2" class="zm_nation text-center">
+                        <div class="info_1 col-xs-3 text-left">Фамилия</div>
+                        <div class="info_2 col-xs-9  " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='B';this.parentNode.replaceChild(inp,this)"><big>{{info.2}}</big></div><br>
+                    </div>
+                    <div id="3" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Имя</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px;  border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='C';this.parentNode.replaceChild(inp,this)"><big>{{info.3}}</big></div><br>
+                    </div>
+                    <div id="4" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Отчество</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px;  border-radius: 7px;';inp.value=this.innerHTML.slice(5, -6);inp.name='D';this.parentNode.replaceChild(inp,this)"><big>{{info.4}}</big></div><br>
+                    </div>
+                    <div id="5" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Фамилия, Имя, Отчество на украинском</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='E';this.parentNode.replaceChild(inp,this)"><big>{{info.5}}</big></div><br>
+                    </div>
+                    <div id="6" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Дата рождения</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='F';this.parentNode.replaceChild(inp,this)"><big>{{info.6}}</big></div><br>
+                    </div>
+                    <div id="7" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Серия, номер паспорта</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='G';this.parentNode.replaceChild(inp,this)"><big>{{info.7}}</big></div><br>
+                    </div>
+                    <div id="8" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">ИНН</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='H';this.parentNode.replaceChild(inp,this)"><big>{{info.8}}</big></div><br>
+                    </div>
+                    <div id="9" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Адрес прописки</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='I';this.parentNode.replaceChild(inp,this)"><big>{{info.9}}</big></div><br>
+                    </div>
+                    <div id="10" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Адрес проживания</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='J';this.parentNode.replaceChild(inp,this)"><big>{{info.10}}</big></div><br>
+                    </div>
+                    <div id="11" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Контакты</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='K';this.parentNode.replaceChild(inp,this)"><big>{{info.11}}</big></div><br>
+                    </div>
+                    <div id="12" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">E-mail</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='L';this.parentNode.replaceChild(inp,this)"><big>{{info.12}}</big></div><br>
+                    </div>
+                    <div id="13" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Есть ли у вас кредитные обязательства?</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='M';this.parentNode.replaceChild(inp,this)"><big>{{info.13}}</big></div><br>
+                    </div>
+                    <div id="14" class="zm_nation text-center educ">
+                            <div class="info_1 col-xs-3 text-left">Образование</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='N';this.parentNode.replaceChild(inp,this)"><big>{{info.14}}</big></div><br>
+                    </div>
+                    <div id="15" class="zm_nation text-center educ">
+                            <div class="info_1 col-xs-3 text-left">Где учились?</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='O';this.parentNode.replaceChild(inp,this)"><big>{{info.15}}</big></div><br>
+                    </div>
+                    <div id="16" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Дополнительное образование</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='P';this.parentNode.replaceChild(inp,this)"><big>{{info.16}}</big></div><br>
+                    </div>
+                    <div id="17" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Есть ли у Вас опыт работы?</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='Q';this.parentNode.replaceChild(inp,this)"><big>{{info.17}}</big></div><br>
+                    </div>
+                    <div id="18" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Название компании</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='R';this.parentNode.replaceChild(inp,this)"><big>{{info.18}}</big></div><br>
+                    </div>
+                    <div id="19" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Должность и период работы</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='S';this.parentNode.replaceChild(inp,this)"><big>{{info.19}}</big></div><br>
+                    </div>
+                    <div id="20" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Причина увольнения</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='T';this.parentNode.replaceChild(inp,this)"><big>{{info.20}}</big></div><br>
+                    </div>
+                    <div id="21" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Название компании</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='U';this.parentNode.replaceChild(inp,this)"><big>{{info.21}}</big></div><br>
+                    </div>
+                    <div id="22" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Должность и период работы</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='V';this.parentNode.replaceChild(inp,this)"><big>{{info.22}}</big></div><br>
+                    </div>
+                    <div id="23" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Причина увольнения</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='W';this.parentNode.replaceChild(inp,this)"><big>{{info.23}}</big></div><br>
+                    </div>
+                    <div id="24" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Название компании</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='X';this.parentNode.replaceChild(inp,this)"><big>{{info.24}}</big></div><br>
+                    </div>
+                    <div id="25" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Должность и период работы</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='Y';this.parentNode.replaceChild(inp,this)"><big>{{info.25}}</big></div><br>
+                    </div>
+                    <div id="26" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Причина увольнения</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='Z';this.parentNode.replaceChild(inp,this)"><big>{{info.26}}</big></div><br>
+                    </div>
+                    <div id="27" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Мать (ФИО, дата рождения, место работы)</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AA';this.parentNode.replaceChild(inp,this)"><big>{{info.27}}</big></div><br>
+                    </div>
+                    <div id="28" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Отец (ФИО, дата рождения, место работы)</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AB';this.parentNode.replaceChild(inp,this)"><big>{{info.28}}</big></div><br>
+                    </div>
+                    <div id="29" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Брат (ФИО, дата рождения, место работы)</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AC';this.parentNode.replaceChild(inp,this)"><big>{{info.29}}</big></div><br>
+                    </div>
+                    <div id="30" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Сестра (ФИО, дата рождения, место работы)</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AD';this.parentNode.replaceChild(inp,this)"><big>{{info.30}}</big></div><br>
+                    </div>
+                    <div id="31" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Муж/Жена (ФИО, дата рождения, место работы)</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AE';this.parentNode.replaceChild(inp,this)"><big>{{info.31}}</big></div><br>
+                    </div>
+                    <div id="32" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Дети (ФИО, дата рождения, место работы)</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AF';this.parentNode.replaceChild(inp,this)"><big>{{info.32}}</big></div><br>
+                    </div>
+                    <div id="33" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Ваше хобби</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AG';this.parentNode.replaceChild(inp,this)"><big>{{info.33}}</big></div><br>
+                    </div>
+                    <div id="34" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Откуда узнали о Lamoda</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AH';this.parentNode.replaceChild(inp,this)"><big>{{info.34}}</big></div><br>
+                    </div>
+                    <div id="35" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Будет ли вам удобно пройти обучение с 9:00 до 18:00?</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AI';this.parentNode.replaceChild(inp,this)"><big>{{info.35}}</big></div><br>
+                    </div>
+                    <div id="36" class="zm_nation text-center">
+                            <div class="info_1 col-xs-3 text-left">Когда готовы приступить к обучению?</div>
+                            <div class="info_2 col-xs-9 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AJ';this.parentNode.replaceChild(inp,this)"><big>{{info.36}}</big></div><br>
+                    </div>
+                    <div id="37" class="zm_nation text-center">
+                            <div class="info_1 col-xs-4 text-left">Есть ли у вас медицинские противопоказания к выполнению обязанностей?</div>
+                            <div class="info_2 col-xs-8  " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AK';this.parentNode.replaceChild(inp,this)"><big>{{info.37}}</big></div><br>
+                    </div>
+                    <div id="38" class="zm_nation text-center">
+                            <div class="info_1 col-xs-5 text-left">Я даю согласие на хранение и обработку моих персональных данных с целью ведения кадрового делопроизводства.</div>
+                            <div class="info_2 col-xs-7  " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AL';this.parentNode.replaceChild(inp,this)"><big>{{info.38}}</big></div><br>
+                    </div>
+                    <div id="39" class="zm_nation text-center">
+                            <div class="info_1 col-xs-4 text-left">Город</div>
+                            <div class="info_2 col-xs-8 " onclick="var inp=document.createElement('textarea');inp.type='text';inp.class='info_2';inp.style='color:#403030; width: 68%; height:75px; border-radius: 7px; ';inp.value=this.innerHTML.slice(5, -6);inp.name='AM';this.parentNode.replaceChild(inp,this)"><big>{{info.39}}</big></div><br>
+                    </div>
+                    <div id="40" class="zm_nation text-center">
+                        <div class="info_1 col-xs-3 text-left">
+                            Статус
+                        </div>
+                        <div class="col-xs-9 text-center">
+                            <select class="selectpicker sel_pic show-tick" name="AN" data-style="btn-info">
+                                <option value="{{info.40}}">{{info.40}}</option>
+                                <option value="Запланирован на СБ">Запланирован на СБ</option>
+                                <option value="Направлен СБ">Направлен СБ</option>
+                                <option value="Одобрен СБ">Одобрен СБ</option>
+                                <option value="Отклонен СБ">Отклонен СБ</option>
+                                <option value="Дополнительная проверка СБ">Дополнительная проверка СБ</option>
+                            </select>
+                        </div>
+                    </div><br>
+                    <button id="knopka" class="btn btn-danger btn-lg col-xs-4 col-xs-offset-4" type="submit">сохранить изменения</button>
+                </form>
             </div>
     </div>
     <div id="content">Контент</div>

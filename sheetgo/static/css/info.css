@@ -68,3 +68,18 @@ body {
     min-height: 80px;
     max-height: 150px;
 }
+#3 input {
+    height: 80px;
+}
+.info_2 textarea {
+    color: #403030;
+    width: 68%;
+    height:75px;
+}
+
+#knopka {
+    margin-bottom: 20px;
+}
+
+
+inp.style='color:#403030; width: 68%; height:75px; '
